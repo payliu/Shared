@@ -48,8 +48,9 @@
   font-weight: normal !important;
   font-style: normal !important;
   font-size: 1em !important;
-  min-height: inherit !important;
-  min-height: auto !important;
+  /*min-height: inherit !important; */
+  /*min-height: auto !important;*/
+  direction: ltr !important;
 }
 
 .syntaxhighlighter {
@@ -57,7 +58,11 @@
   margin: 1em 0 1em 0 !important;
   position: relative !important;
   overflow: auto !important;
+  overflow-y: hidden !important;
   font-size: 1em !important;
+}
+.syntaxhighlighter code {
+  display: inline !important;
 }
 .syntaxhighlighter.source {
   overflow: hidden !important;
@@ -223,4 +228,42 @@
 }
 .syntaxhighlighter.printing .break, .syntaxhighlighter.printing .break a {
   color: black !important;
+}
+
+
+
+.syntaxhighlighter .xcode1 {
+  color: #CE00A5 !important;
+}
+
+.syntaxhighlighter .xcodecomments {
+  color: #008C00 !important;
+}
+
+.syntaxhighlighter .xcodenumber {
+  color: #3800E1 !important;
+}
+
+.syntaxhighlighter .xcodestring {
+  color: #E50000 !important;
+}
+
+.syntaxhighlighter .xcodeconstants {
+  color: #7C20B0 !important; 
+}
+
+.syntaxhighlighter .xcodekeyword {
+  color: #460086 !important;
+}
+
+.syntaxhighlighter .xcodevariable {
+  color: #460086 !important;
+}
+
+.syntaxhighlighter .xcodepreprocessor {
+  color: #80461E !important;
+}
+
+.syntaxhighlighter .xcodekeywords {
+  color: #7C20B0 !important;
 }
